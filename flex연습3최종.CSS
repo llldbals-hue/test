@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+body{
+  color: #333;
+  font-family: sans-serif;
+}
+
+h1,h2,h3{
+  font-family: "Lilita One";
+}
+
+header{
+  width: 100%;
+  height: 10vh;
+  min-height: 80px;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+
+header nav ul{
+  display: flex;
+  gap: 0 32px;
+}
+
+header nav ul li{
+  font-family: "Lilita One";
+}
+
+.h_section{
+  width: 100%;
+  height: 80vh;
+  background-image: url(./flex연습3/img/mainbg.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 32px;
+}
+
+.h_section .h_title h2{
+  text-align: center;
+  font-size: calc(40px + 5vw);
+  color: blue;
+  margin-bottom: 32px;
+  line-height: 1  ;
+}
+
+.h_section .h_title p{
+  text-align: center;
+  color: blue;
+}
+
+.menu{
+  width: 100%;
+  padding: 0 32px;
+  margin: 15rem 0;
+}
+
+.menu .menu_i{
+  width: 1480px;
+  margin: auto;
+}
+
+.menu .menu_i .menu_title{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.menu .menu_i .menu_title h2{
+  font-size: 40px;
+  margin-bottom: 32px;
+}
+
+.menu .menu_i .menu_title p{
+  line-height: 1.5;
+}
+
+.menu .menu_i .menu_contents{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.menu .menu_i .menu_contents .item{
+  flex-grow: 1;
+  flex-basis: calc((100% - 72px) / 4);
+  background-color: lightpink;
+  padding: 16px;
+  border-radius: 100%;
+}
+
+.banner{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  min-height: 500px;
+}
+
+.banner .l_banner{
+  flex-basis: 50%;
+  height: 100%;
+  background-image: url(./flex연습3/img/gridleftBg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 32px;
+}
+
+.banner .l_banner h2{
+  font-size: 64px;
+  margin-bottom: 8px;
+}
+
+.banner .l_banner p{
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.banner .l_banner ul{
+  list-style: circle;
+  padding-left: 20px;
+}
+
+.banner .l_banner ul li{
+  margin-bottom: 12px;
+}
+
+.banner .r_banner{
+  flex-basis: 50%;
+  height: 100%;
+}
+
+.banner .r_banner .view{
+  width: 100%;
+  height: 50%;
+  background-image: url(./flex연습3/img/gridrightBg_1.png);
+  background-position: center;
+  background-size: cover;
+  padding: 32px;
+}
+
+.banner .r_banner .view h2{
+  font-size: 48px;
+  color: #fff;
+}
+
+.banner .r_banner .view .view_btn{
+  display: block;
+  width: 40%;
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 16px 0;
+  margin-top: 16px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.banner .r_banner .link{
+  width: 100%;
+  height: 50%;
+  background-image: url(./flex연습3/img/gridrightBg_2.png);
+  background-size: cover;
+  background-position: center;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.banner .r_banner .link h2{
+  font-size: 48px;
+  color: pink;
+}
+
+.banner .r_banner .link .q_link{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.banner .r_banner .link .q_link a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.banner .r_banner .link .q_link a svg{
+  font-size: 40px;
+}
+
+.banner .r_banner .link .q_link a span{
+  font-family: "Lilita One"
+}
+
+footer{
+  width: 100%;
+  height: 80px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width:1200px) {
+  header{
+    height: auto;
+    min-height: auto;
+    flex-direction: column;
+    padding: 24px 32px;
+    background-color: #ffffff81;
+    gap: 40px 0;
+  }
+
+  .h_section{
+    height: 100vh;
+  }
+
+  .menu .menu_i .menu_contents .item{
+    flex-basis: calc((100% - 48px) / 3);
+  }
+
+  .banner{
+    height: 100vh;
+    flex-direction: column;
+  }
+
+  .banner .l_banner{
+    flex-basis: 60%;
+  }
+
+  .banner .r_banner{
+    flex-basis: 40%;
+    display: flex;
+  }
+
+  .banner .r_banner .view{
+    height: 100%;
+  }
+
+  .banner .r_banner .view h2{
+    font-size: 36px;
+  }
+
+  .banner .r_banner .link{
+    height: 100%;
+  }
+
+  .banner .r_banner .link h2{
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width:768px){
+  .menu .menu_i .menu_contents .item{
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .banner{
+    height: 130vh;
+  }
+
+  .banner .l_banner{
+    flex-basis: calc(100% * .4);
+  }
+
+  .banner .r_banner{
+    flex-direction: column;
+    flex-basis: calc(100% * .6);
+  }
+
+  .banner .r_banner .view{
+    height: 50%;
+  }
+
+  .banner .r_banner .link{
+    height: 50%;
+  }
+}
