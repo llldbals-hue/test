@@ -49,7 +49,7 @@ header nav ul li{
 .h_section{
   width: 100%;
   height: 80vh;
-  background-image: url(./flex연습3/img/mainbg.png);
+  background-image: url(./img/mainbg.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -122,7 +122,7 @@ header nav ul li{
 .banner .l_banner{
   flex-basis: 50%;
   height: 100%;
-  background-image: url(./flex연습3/img/gridleftBg.png);
+  background-image: url(./img/gridleftBg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -156,7 +156,7 @@ header nav ul li{
 .banner .r_banner .view{
   width: 100%;
   height: 50%;
-  background-image: url(./flex연습3/img/gridrightBg_1.png);
+  background-image: url(./img/gridrightBg_1.png);
   background-position: center;
   background-size: cover;
   padding: 32px;
@@ -181,7 +181,7 @@ header nav ul li{
 .banner .r_banner .link{
   width: 100%;
   height: 50%;
-  background-image: url(./flex연습3/img/gridrightBg_2.png);
+  background-image: url(./img/gridrightBg_2.png);
   background-size: cover;
   background-position: center;
   padding: 32px;
